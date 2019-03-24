@@ -22,7 +22,8 @@ $responsive_logo 	= get_theme_mod( 'ocean_responsive_logo' ); ?>
 	<?php do_action( 'ocean_before_logo_inner' ); ?>
 
 	<div id="site-logo-inner" class="clr">
-		<h1 id="three-title" class="custom-logo">3rd Perspective<br/>Design</h1>
+		<h1 id="three-title" class="custom-logo">
+<?php echo get_bloginfo('name');?></h1>
 
 		<?php
 		// Custom site-wide image logo
