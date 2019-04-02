@@ -31,6 +31,7 @@ if( OCEANWP_LIFTERLMS_ACTIVE ) {
 // Image args
 $img_args = array(
     'alt' => get_the_title(),
+    'class' => 'single-cover',
 );
 if ( oceanwp_get_schema_markup( 'image' ) ) {
 	$img_args['itemprop'] = 'image';
@@ -43,7 +44,7 @@ $caption = get_the_post_thumbnail_caption(); ?>
 
 	<?php
 	// Display post thumbnail
-	the_post_thumbnail( 'full', $img_args );
+	the_post_thumbnail( 'large', $img_args );
 
 	// Caption
 	if ( $caption ) { ?>
